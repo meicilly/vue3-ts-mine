@@ -23,8 +23,8 @@ export default defineComponent({
     setup () {
         const store = useStore()
         const account:IAcount = reactive({
-            name:LocalCache.getCache("name") ??'',
-            password:LocalCache.getCache("password") ?? ''
+            name:LocalCache.getCache("name") ??'lixiaohai',
+            password:LocalCache.getCache("password") ?? '123456'
         })
         const formRef = ref<InstanceType<typeof ElForm>>()
         const loginAccount = (isRemmberPassword:boolean) => {
